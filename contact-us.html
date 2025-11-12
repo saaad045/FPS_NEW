@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Full Plate Studio | Digital Marketing Agency</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500&family=Sora:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- Logo Image -->
+                <img src="./img/logo-03.png" alt="Full Plate Studio Logo" class="navbar-logo me-2">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="nav-wrapper d-flex align-items-center px-4 py-2 glass-nav">
+                    <ul class="navbar-nav d-flex align-items-center gap-2 mb-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- CTA Button - Moved inside collapse for mobile -->
+                <div class="d-lg-none mt-3">
+                    <a href="contact-us.html"
+                        class="btn btn-accent w-100 d-flex align-items-center justify-content-center">
+                        <i class="bi bi-arrow-up-right me-2"></i> Book A Call
+                    </a>
+                </div>
+            </div>
+
+            <!-- CTA Button - Desktop -->
+            <div class="d-none d-lg-block">
+                <a href="contact-us.html" class="btn btn-accent">
+                    <i class="bi bi-arrow-up-right me-1"></i> Book A Call
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contactpage-hero contactpage-section">
+        <div class="contactpage-hero-content">
+            <div class="hero-badge glass-badge fade-up delay-1">
+                <i class="fas fa-comments me-2"></i> Let's Start The Conversation
+            </div>
+
+            <h1 class="contactpage-title fade-up delay-2">
+                Ready to Transform Your<br />
+                <span class="accent glitch-text" data-text="Digital Presence">Digital Presence?</span>
+            </h1>
+
+            <p class="contactpage-subtitle fade-up delay-3">
+                We're here to listen, understand, and help you achieve your digital goals. 
+                Choose your preferred way to connect with our team of experts.
+            </p>
+
+            <div class="fade-up delay-4">
+                <a href="#contact-methods" class="btn-accent me-3">
+                    <i class="fas fa-paper-plane me-2"></i> Contact Methods
+                </a>
+                <a href="#interactive-widget" class="btn-accent" style="background: transparent; border: 2px solid var(--accent-color); color: var(--accent-color);">
+                    <i class="fas fa-magic me-2"></i> Interactive Guide
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrolling Banner Section -->
+    <section class="scrolling-banner">
+        <div class="scroll-container">
+            <div class="scroll-content">
+                <span><i class="fas fa-circle-notch"></i>● Digital Marketing</span>
+                <span><i class="fas fa-circle-notch"></i>● Social Media Marketing</span>
+                <span><i class="fas fa-circle-notch"></i>● Content Marketing</span>
+                <span><i class="fas fa-circle-notch"></i>● Branding Services</span>
+                <span><i class="fas fa-circle-notch"></i>● Research & Analysis</span>
+                <span><i class="fas fa-circle-notch"></i>● Search Engine Optimization</span>
+
+                <!-- Duplicate content for seamless looping -->
+                <span><i class="fas fa-circle-notch"></i>● Digital Marketing</span>
+                <span><i class="fas fa-circle-notch"></i>● Social Media Marketing</span>
+                <span><i class="fas fa-circle-notch"></i>● Content Marketing</span>
+                <span><i class="fas fa-circle-notch"></i>● Branding Services</span>
+                <span><i class="fas fa-circle-notch"></i>● Research & Analysis</span>
+                <span><i class="fas fa-circle-notch"></i>● Search Engine Optimization</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section id="contact-methods" class="contactpage-methods contactpage-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge-accent"><i class="fas fa-network-wired me-2"></i>Multiple Ways to Connect</span>
+                <h2 class="section-title mt-3">Choose Your Preferred Contact Method</h2>
+                <p class="contactpage-subtitle">We've made it easy to reach us in the way that works best for you.</p>
+            </div>
+
+            <div class="contactpage-methods-grid">
+                <!-- Method 1: Instant Call -->
+                <div class="contactpage-method-card fade-up delay-1" onclick="handleContact('call')">
+                    <div class="contactpage-method-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="contactpage-method-title">Instant Call</h3>
+                    <p class="contactpage-method-text">
+                        Speak directly with our strategy team. Perfect for immediate questions or detailed discussions about your project needs.
+                    </p>
+                    <a href="tel:+15551234567" class="contactpage-method-cta">
+                        <span>Call +1 (555) 123-4567</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Method 2: Video Consultation -->
+                <div class="contactpage-method-card fade-up delay-2" onclick="handleContact('video')">
+                    <div class="contactpage-method-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="contactpage-method-title">Video Consultation</h3>
+                    <p class="contactpage-method-text">
+                        Face-to-face virtual meeting with screen sharing. Ideal for detailed project walkthroughs and collaborative planning.
+                    </p>
+                    <a href="#" class="contactpage-method-cta" onclick="scheduleVideoCall()">
+                        <span>Schedule Video Call</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Method 3: WhatsApp Chat -->
+                <div class="contactpage-method-card fade-up delay-3" onclick="handleContact('whatsapp')">
+                    <div class="contactpage-method-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="contactpage-method-title">WhatsApp Business</h3>
+                    <p class="contactpage-method-text">
+                        Quick questions, file sharing, and instant messaging. Get fast responses and share project details seamlessly.
+                    </p>
+                    <a href="https://wa.me/15551234567" target="_blank" class="contactpage-method-cta">
+                        <span>Start WhatsApp Chat</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Method 4: Project Brief 
+                <div class="contactpage-method-card fade-up delay-4" onclick="handleContact('brief')">
+                    <div class="contactpage-method-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="contactpage-method-title">Project Brief</h3>
+                    <p class="contactpage-method-text">
+                        Share your project details through our structured brief form. Get a comprehensive proposal within 24 hours.
+                    </p>
+                    <a href="#" class="contactpage-method-cta" onclick="startProjectBrief()">
+                        <span>Submit Project Brief</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>-->
+
+                <!-- Method 5: Office Visit -->
+                <div class="contactpage-method-card fade-up delay-5" onclick="handleContact('visit')">
+                    <div class="contactpage-method-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="contactpage-method-title">Office Visit</h3>
+                    <p class="contactpage-method-text">
+                        Visit our creative studio for an in-person consultation. Experience our work environment and meet the team.
+                    </p>
+                    <a href="#" class="contactpage-method-cta" onclick="scheduleVisit()">
+                        <span>Schedule Office Visit</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Method 6: Social Media 
+                <div class="contactpage-method-card fade-up delay-6" onclick="handleContact('social')">
+                    <div class="contactpage-method-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3 class="contactpage-method-title">Social Media</h3>
+                    <p class="contactpage-method-text">
+                        Connect with us on social platforms. Great for quick updates, seeing our work, and informal conversations.
+                    </p>
+                    <a href="#" class="contactpage-method-cta" onclick="showSocialLinks()">
+                        <span>Follow & Message</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Contact Widget -->
+    <section id="interactive-widget" class="contactpage-widget contactpage-section">
+        <div class="container">
+            <div class="contactpage-widget-content">
+                <!-- Interactive Options -->
+                <div class="contactpage-interactive fade-up delay-1">
+                    <h3 class="contactpage-interactive-title">How Can We Help You Today?</h3>
+                    <p class="contactpage-interactive-subtitle">Select your goal and we'll guide you to the perfect solution</p>
+                    
+                    <div class="contactpage-options">
+                        <div class="contactpage-option" data-option="strategy" onclick="selectOption('strategy')">
+                            <div class="contactpage-option-header">
+                                <div class="contactpage-option-icon">
+                                    <i class="fas fa-chess"></i>
+                                </div>
+                                <div class="contactpage-option-title">Strategy Session</div>
+                            </div>
+                            <div class="contactpage-option-desc">
+                                Need help planning your digital marketing roadmap? Let's build your strategy together.
+                            </div>
+                        </div>
+
+                        <div class="contactpage-option" data-option="project" onclick="selectOption('project')">
+                            <div class="contactpage-option-header">
+                                <div class="contactpage-option-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="contactpage-option-title">Start a Project</div>
+                            </div>
+                            <div class="contactpage-option-desc">
+                                Ready to begin? We'll scope your project and provide a detailed proposal.
+                            </div>
+                        </div>
+
+                        <div class="contactpage-option" data-option="partnership" onclick="selectOption('partnership')">
+                            <div class="contactpage-option-header">
+                                <div class="contactpage-option-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="contactpage-option-title">Partnership</div>
+                            </div>
+                            <div class="contactpage-option-desc">
+                                Interested in long-term collaboration? Let's discuss partnership opportunities.
+                            </div>
+                        </div>
+
+                        <div class="contactpage-option" data-option="support" onclick="selectOption('support')">
+                            <div class="contactpage-option-header">
+                                <div class="contactpage-option-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="contactpage-option-title">Support & Maintenance</div>
+                            </div>
+                            <div class="contactpage-option-desc">
+                                Need ongoing support for your existing digital assets? We're here to help.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contactpage-method-cta" style="justify-content: center; font-size: 1.1rem;">
+                        <i class="fas fa-comment-dots me-2"></i>
+                        <span id="selected-option-text">Select an option to continue</span>
+                    </div>
+                </div>
+
+                <!-- Visual Response Area -->
+                <div class="contactpage-visual fade-up delay-2">
+                    <div class="contactpage-visual-content">
+                        <div class="contactpage-visual-icon">
+                            <i class="fas fa-comment-dots" id="visual-icon"></i>
+                        </div>
+                        <div class="contactpage-visual-text" id="visual-text">
+                            Tell Us About Your Goals
+                        </div>
+                        <div class="contactpage-visual-subtext" id="visual-subtext">
+                            Select what you'd like to achieve and we'll show you the best way forward
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contactpage-faq contactpage-section">
+        <div class="contactpage-faq-content">
+            <div class="text-center mb-5">
+                <span class="badge-accent"><i class="fas fa-question-circle me-2"></i>Common Questions</span>
+                <h2 class="contactpage-title mt-3">Frequently Asked Questions</h2>
+                <p class="contactpage-subtitle">Quick answers to the questions we get asked the most</p>
+            </div>
+
+            <div class="contactpage-faq-grid">
+                <!-- FAQ Item 1 -->
+                <div class="contactpage-faq-item fade-up delay-1">
+                    <div class="contactpage-faq-question">
+                        <i class="fas fa-clock"></i>
+                        What are your response times?
+                    </div>
+                    <div class="contactpage-faq-answer">
+                        We typically respond within 2 hours during business hours (9AM-6PM EST). For urgent matters, use our instant call option for immediate assistance.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="contactpage-faq-item fade-up delay-2">
+                    <div class="contactpage-faq-question">
+                        <i class="fas fa-dollar-sign"></i>
+                        Do you offer free consultations?
+                    </div>
+                    <div class="contactpage-faq-answer">
+                        Yes! We offer complimentary 30-minute strategy sessions to understand your needs and see if we're the right fit for your project.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="contactpage-faq-item fade-up delay-3">
+                    <div class="contactpage-faq-question">
+                        <i class="fas fa-globe"></i>
+                        Do you work with international clients?
+                    </div>
+                    <div class="contactpage-faq-answer">
+                        Absolutely! We work with clients worldwide. Our team is experienced in managing projects across different time zones and cultures.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="contactpage-faq-item fade-up delay-4">
+                    <div class="contactpage-faq-question">
+                        <i class="fas fa-calendar"></i>
+                        How do I schedule a meeting?
+                    </div>
+                    <div class="contactpage-faq-answer">
+                        Use any of our contact methods above. For scheduled meetings, we'll send you a calendar invite with video call details and preparation materials.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="contactpage-faq-item fade-up delay-5">
+                    <div class="contactpage-faq-question">
+                        <i class="fas fa-file-contract"></i>
+                        What information should I prepare?
+                    </div>
+                    <div class="contactpage-faq-answer">
+                        For our first conversation, just bring your business goals and challenges. We'll guide you through the rest. No lengthy documents needed upfront!
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="contactpage-faq-item fade-up delay-6">
+                    <div class="contactpage-faq-question">
+                        <i class="fas fa-users"></i>
+                        Who will I be working with?
+                    </div>
+                    <div class="contactpage-faq-answer">
+                        You'll work directly with our senior strategists and account managers. We believe in building strong, personal relationships with our clients.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <a href="/">
+                            <img src="./img/logo-03.png" alt="Full Plate Studio Logo" class="logo-img">
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        Transforming brands through innovative digital strategies, stunning designs, and measurable
+                        results.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="about-us.html">About Us <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="services.html">Services <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="blog.html">BLog <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="contact-us.html">Contact <i class="fas fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="offline-marketing.html">Offline Marketing <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                        <li><a href="brand-strategy.html">Brand Strategy & Design <i
+                                    class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="content-marketing.html">Content & Email Marketing <i
+                                    class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="social-media-management.html">Social Media Management <i
+                                    class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="paid-advertising.html">Paid Advertising <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-section newsletter-section">
+                    <h5>Stay Updated</h5>
+                    <p>Subscribe to our newsletter for the latest updates, insights, and digital marketing tips.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                    
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2023 Full Plate Studio. All rights reserved.
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Navbar scroll effect
+        document.addEventListener("scroll", () => {
+            const navbar = document.querySelector(".custom-navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("visible");
+            } else {
+                navbar.classList.remove("visible");
+            }
+        });
+
+        // Show navbar on load with a delay
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                document.querySelector(".custom-navbar").classList.add("visible");
+            }, 300);
+        });
+
+        // Interactive Contact Methods
+        function handleContact(method) {
+            const methods = {
+                call: { message: "Great choice! Calling our team now...", action: () => window.location.href = 'tel:+15551234567' },
+                video: { message: "Perfect! Let's schedule your video consultation.", action: scheduleVideoCall },
+                whatsapp: { message: "Opening WhatsApp to start our conversation...", action: () => window.open('https://wa.me/15551234567', '_blank') },
+                brief: { message: "Excellent! Let's capture your project details.", action: startProjectBrief },
+                visit: { message: "We'd love to host you! Let's schedule your visit.", action: scheduleVisit },
+                social: { message: "Connecting you with our social channels...", action: showSocialLinks }
+            };
+
+            if (methods[method]) {
+                showNotification(methods[method].message);
+                setTimeout(methods[method].action, 1500);
+            }
+        }
+
+        // Interactive Option Selection
+        function selectOption(option) {
+            // Remove active class from all options
+            document.querySelectorAll('.contactpage-option').forEach(opt => {
+                opt.classList.remove('active');
+            });
+            
+            // Add active class to selected option
+            document.querySelector(`.contactpage-option[data-option="${option}"]`).classList.add('active');
+
+            // Update visual response
+            const responses = {
+                strategy: {
+                    icon: 'fas fa-chess',
+                    text: 'Strategy Session Selected',
+                    subtext: 'Perfect! Let\'s analyze your current position and build a winning digital strategy together.'
+                },
+                project: {
+                    icon: 'fas fa-rocket',
+                    text: 'Start a Project',
+                    subtext: 'Excellent! We\'ll guide you through our process and provide a detailed project proposal.'
+                },
+                partnership: {
+                    icon: 'fas fa-handshake',
+                    text: 'Partnership Opportunity',
+                    subtext: 'Great! Let\'s discuss how we can build a long-term successful partnership.'
+                },
+                support: {
+                    icon: 'fas fa-headset',
+                    text: 'Support & Maintenance',
+                    subtext: 'We\'ve got you covered! Let\'s discuss your ongoing support needs and create a maintenance plan.'
+                }
+            };
+
+            const response = responses[option];
+            if (response) {
+                document.getElementById('visual-icon').className = response.icon;
+                document.getElementById('visual-text').textContent = response.text;
+                document.getElementById('visual-subtext').textContent = response.subtext;
+                document.getElementById('selected-option-text').textContent = `Continue with ${response.text}`;
+            }
+        }
+
+        // Contact Method Actions
+        function scheduleVideoCall() {
+            showNotification('Opening our scheduling system...');
+            setTimeout(() => {
+                // In a real implementation, this would open a calendar/scheduling system
+                alert('Video call scheduling would open here. For now, please call us to schedule!');
+            }, 1000);
+        }
+
+        function startProjectBrief() {
+            showNotification('Preparing your project brief form...');
+            setTimeout(() => {
+                // In a real implementation, this would open a project brief form
+                alert('Project brief form would open here. For now, please email us your project details!');
+            }, 1000);
+        }
+
+        function scheduleVisit() {
+            showNotification('Checking our availability...');
+            setTimeout(() => {
+                // In a real implementation, this would open a scheduling system
+                alert('Office visit scheduling would open here. For now, please call us to schedule your visit!');
+            }, 1000);
+        }
+
+        function showSocialLinks() {
+            showNotification('Showing our social media profiles...');
+            setTimeout(() => {
+                alert('Follow us on:\n\n📘 Facebook: @fullplatestudio\n🐦 Twitter: @fullplatestudio\n📷 Instagram: @fullplatestudio\n💼 LinkedIn: Full Plate Studio');
+            }, 1000);
+        }
+
+        // Notification System
+        function showNotification(message) {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: var(--accent-color);
+                color: var(--primary-bg);
+                padding: 15px 25px;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(159, 255, 88, 0.3);
+                z-index: 10000;
+                font-weight: 600;
+                transform: translateX(400px);
+                transition: transform 0.3s ease;
+                max-width: 300px;
+            `;
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.style.transform = 'translateX(400px)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Add intersection observer for animation triggers
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Plate Studio | Digital Marketing Agency</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500&family=Sora:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- Logo Image -->
+                <img src="./img/logo-03.png" alt="Full Plate Studio Logo" class="navbar-logo me-2">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="nav-wrapper d-flex align-items-center px-4 py-2 glass-nav">
+                    <ul class="navbar-nav d-flex align-items-center gap-2 mb-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- CTA Button - Moved inside collapse for mobile -->
+                <div class="d-lg-none mt-3">
+                    <a href="contact-us.html"
+                        class="btn btn-accent w-100 d-flex align-items-center justify-content-center">
+                        <i class="bi bi-arrow-up-right me-2"></i> Book A Call
+                    </a>
+                </div>
+            </div>
+
+            <!-- CTA Button - Desktop -->
+            <div class="d-none d-lg-block">
+                <a href="contact-us.html" class="btn btn-accent">
+                    <i class="bi bi-arrow-up-right me-1"></i> Book A Call
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="floating-lights"></div>
+
+        <!-- NEW: Interactive background elements -->
+        <div class="interactive-shapes" id="interactiveShapes"></div>
+
+        <!-- NEW: Particle system -->
+        <div class="particles-container" id="particlesContainer"></div>
+
+        <!-- NEW: Cursor trail -->
+        <div class="cursor-trail" id="cursorTrail"></div>
+
+        <div
+            class="container position-relative d-flex flex-column justify-content-center align-items-center text-center">
+            <div class="hero-content">
+                <div class="hero-badge glass-badge fade-up delay-1">
+                    <i class="bi bi-stars me-2"></i> We are world top marketing agency
+                </div>
+
+                <h1 class="hero-title fade-up delay-2">
+                    Where Creativity Meets <br />
+                    <span class="accent glitch-text" data-text="Digital Growth">Digital Growth</span>
+                </h1>
+
+                <p class="hero-subtitle fade-up delay-3">
+                    Boost your business with tested digital strategies, creative campaigns, and data-driven
+                    performance. Let's grow your brand—naturally and effectively.
+                </p>
+
+                <div class="hero-buttons fade-up delay-4">
+                    <a href="contact-us.html" class="btn btn-accent me-3">
+                        <i class="bi bi-arrow-up-right"></i> Get Free Consultation
+                    </a>
+                    <a href="services.html" class="btn btn-outline-accent">
+                        <i class="bi bi-calendar-event"></i> Explore our Services
+                    </a>
+                </div>
+
+                <div class="trusted-section glass-card mt-5 fade-up delay-5">
+                    <div class="trusted-badge mb-3">
+                        <i class="bi bi-shield-check me-2"></i> Trusted by top companies worldwide
+                    </div>
+
+                    <div class="trusted-carousel">
+                        <div class="carousel-track">
+                            <!-- Enhanced with logo placeholders -->
+                            <div class="logo-carousel-item">
+                                <div class="logo-placeholder">Branexis</div>
+                            </div>
+                            <div class="logo-carousel-item">
+                                <div class="logo-placeholder">Elevix</div>
+                            </div>
+                            <div class="logo-carousel-item">
+                                <div class="logo-placeholder">Stratigo</div>
+                            </div>
+                            <div class="logo-carousel-item">
+                                <div class="logo-placeholder">Verseo</div>
+                            </div>
+                            <div class="logo-carousel-item">
+                                <div class="logo-placeholder">Adspire</div>
+                            </div>
+                            <div class="logo-carousel-item">
+                                <div class="logo-placeholder">Boldive</div>
+                            </div>
+                            <!-- Duplicate for seamless loop -->
+                            <div class="logo-carousel-item">
+                                <div class="logo-placeholder">Branexis</div>
+                            </div>
+                            <div class="logo-carousel-item">
+                                <div class="logo-placeholder">Elevix</div>
+                            </div>
+                            <div class="logo-carousel-item">
+                                <div class="logo-placeholder">Stratigo</div>
+                            </div>
+                            <div class="logo-carousel-item">
+                                <div class="logo-placeholder">Verseo</div>
+                            </div>
+                            <div class="logo-carousel-item">
+                                <div class="logo-placeholder">Adspire</div>
+                            </div>
+                            <div class="logo-carousel-item">
+                                <div class="logo-placeholder">Boldive</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW: Scroll indicator -->
+        <div class="scroll-indicator fade-up delay-5">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container text-center">
+            <div class="mb-4">
+                <span class="badge-accent"><i class="fas fa-rocket me-2"></i>Our Services</span>
+                <h2 class="section-title mt-3">Our Digital Services To Grow Your Brand</h2>
+                <p class="section-subtitle">We provide cutting-edge digital marketing solutions that drive real results
+                    and help your business thrive in the digital landscape.</p>
+            </div>
+
+            <!-- Carousel Wrapper -->
+            <div class="service-carousel-wrapper position-relative">
+                <button class="carousel-btn prev-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="service-carousel" id="serviceCarousel">
+                    <!-- CARD 1 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h4>Pay-Per-Click Advertising (PPC)</h4>
+                        <p>Drive targeted traffic with cost-effective ad campaigns on Google Ads and social media
+                            platforms. Maximize ROI with data-driven strategies.</p>
+                        <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=600" alt="PPC Advertising"
+                            class="service-img">
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <h4>Content & Email Marketing</h4>
+                        <p>We craft high-quality blogs, videos, and graphics to educate your audience and build trust.
+                            Nurture leads with strategic email campaigns.</p>
+                        <img src="https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+                            alt="Content Marketing" class="service-img">
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Brand Strategy & Design</h4>
+                        <p>We help define your brand identity with logos, colors, and messaging that stand out. Create a
+                            memorable brand that resonates with your audience.</p>
+                        <img src="https://i.pinimg.com/1200x/9b/0f/08/9b0f084e63bd27c4791aee1dccb182be.jpg"
+                            alt="Brand Strategy" class="service-img">
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <h4>Web Design & SEO</h4>
+                        <p>Beautiful, responsive websites optimized for performance and search visibility. Drive organic
+                            traffic with comprehensive SEO strategies.</p>
+                        <img src="https://images.unsplash.com/photo-1508830524289-0adcbe822b40?w=600" alt="Web Design"
+                            class="service-img">
+                    </div>
+
+                    <!-- CARD 5 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>Performance Analytics</h4>
+                        <p>Gain insights with data-driven reports that track engagement and conversions. Make informed
+                            decisions with comprehensive analytics.</p>
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600" alt="Analytics"
+                            class="service-img">
+                    </div>
+
+                    <!-- CARD 6 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-users"></i></div>
+                        <h4>Social Media Management</h4>
+                        <p>Build and engage your community across all major social platforms. Increase brand awareness
+                            and drive conversions with targeted content.</p>
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600" alt="Social Media"
+                            class="service-img">
+                    </div>
+                </div>
+
+                <button class="carousel-btn next-btn" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators" id="carouselIndicators">
+                <!-- Indicators will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <div class="about-img-content">
+                            <div class="floating-elements">
+                                <div class="floating-element"></div>
+                                <div class="floating-element"></div>
+                                <div class="floating-element"></div>
+                            </div>
+                            <!-- You can replace this with an actual image -->
+                            <img src="https://cdn.prod.website-files.com/683f409fbad13ddc254de956/688525261865bcc1d64952e7_About-Image-p-1080.jpg"
+                                alt="About Full Plate Studio" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title1">About Full Plate Studio</h2>
+                        <p>Founded in 2020, Full Plate Studio has grown from a small creative team to a full-service
+                            digital marketing agency serving clients across various industries.</p>
+                        <p>Our mission is to deliver exceptional results through data-driven strategies, innovative
+                            design, and seamless execution. We believe in building long-term partnerships with our
+                            clients, helping them navigate the ever-changing digital landscape.</p>
+                        <p>With a team of experienced marketers, designers, and developers, we bring a comprehensive
+                            approach to every project, ensuring your brand not only looks great but performs
+                            exceptionally.</p>
+
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="150">0</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="50">0</span>
+                                <span class="stat-label">Clients</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="5">0</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                        </div>
+
+                        <a href="about-us.html" class="aboutCta">
+                            <span>Learn More About Us</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrolling Banner Section -->
+    <section class="scrolling-banner">
+        <div class="scroll-container">
+            <div class="scroll-content">
+                <span><i class="fas fa-circle-notch"></i>● Digital Marketing</span>
+                <span><i class="fas fa-circle-notch"></i>● Social Media Marketing</span>
+                <span><i class="fas fa-circle-notch"></i>● Content Marketing</span>
+                <span><i class="fas fa-circle-notch"></i>● Branding Services</span>
+                <span><i class="fas fa-circle-notch"></i>● Research & Analysis</span>
+                <span><i class="fas fa-circle-notch"></i>● Search Engine Optimization</span>
+
+                <!-- Duplicate content for seamless looping -->
+                <span><i class="fas fa-circle-notch"></i>● Digital Marketing</span>
+                <span><i class="fas fa-circle-notch"></i>● Social Media Marketing</span>
+                <span><i class="fas fa-circle-notch"></i>● Content Marketing</span>
+                <span><i class="fas fa-circle-notch"></i>● Branding Services</span>
+                <span><i class="fas fa-circle-notch"></i>● Research & Analysis</span>
+                <span><i class="fas fa-circle-notch"></i>● Search Engine Optimization</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+
+        <div class="section-header1">
+            <span class="tag">Case Studies</span>
+            <h2>See What's Worked For<br>Our Clients</h2>
+        </div>
+
+        <div class="case-studies-container">
+            <!-- Left Tabs -->
+            <div class="side-tabs left">
+                <div class="tab active" data-index="0">Keyword Research and Analysis</div>
+                <div class="tab" data-index="1">Competitor Research and Insights</div>
+                <div class="tab" data-index="2">Market Trends and Analysis</div>
+            </div>
+
+            <!-- Main Slide Area -->
+            <div class="case-slide">
+                <div class="case-image">
+                    <img id="caseImage" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
+                        alt="Case Study">
+                    <div class="case-overlay">
+                        <h4 id="caseTitle">Conversion Rate Optimization</h4>
+                        <div class="case-stats">
+                            <div>
+                                <span id="stat1">72%</span>
+                                <p id="label1">Increase in User Retention</p>
+                            </div>
+                            <div>
+                                <span id="stat2">80%</span>
+                                <p id="label2">Increase in Qualified Leads</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Tabs -->
+            <div class="side-tabs right">
+                <div class="tab" data-index="3">SEO Audit and Optimization</div>
+                <div class="tab" data-index="4">Performance Tracking and Reporting</div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button class="contact-btn" onclick="window.location.href='contact-us.html'">Get in Touch
+                →</button>
+        </div>
+
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+
+        <div class="container text-center">
+            <div class="mb-4">
+                <span class="badge-accent"><i class="fas fa-sync me-2"></i>Working Process</span>
+                <h2 class="section-title mt-3">Our Step-By-Step Approach</h2>
+            </div>
+
+            <div class="process-wrapper">
+                <!-- Step 1 -->
+                <div class="process-step step-1">
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                    <h5>Discovery & Strategy</h5>
+                    <p>We start by understanding your business, goals, and audience to craft a tailored roadmap.</p>
+                    <span class="step-number">01</span>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step step-2">
+                    <div class="icon"><i class="fas fa-pencil-ruler"></i></div>
+                    <h5>Creative Planning</h5>
+                    <p>Our team designs compelling campaigns and visuals aligned with your brand’s voice.</p>
+                    <span class="step-number">02</span>
+                </div>
+
+                <!-- Center Image -->
+                <div class="process-center">
+                    <div class="center-glow"></div>
+                    <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=800" alt="Process Image"
+                        class="process-img">
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step step-3">
+                    <div class="icon"><i class="fas fa-bullseye"></i></div>
+                    <h5>Execution & Optimization</h5>
+                    <p>We launch, manage, and continuously refine every campaign for maximum ROI.</p>
+                    <span class="step-number">03</span>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step step-4">
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <h5>Reporting & Growth</h5>
+                    <p>Transparent reports and insights as we evolve and scale your success.</p>
+                    <span class="step-number">04</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-left">
+                <span class="tag">Reach Out Us</span>
+                <h2>Ready To Talk? Reach<br>Out Anytime</h2>
+                <p>Have a project in mind? Let's chat! Our team is just a message away. We're here to help bring your
+                    ideas to life with innovative digital solutions.</p>
+                <button class="btn-accent" id="openContactForm">
+                    <i class="fas fa-paper-plane"></i>
+                    Start a Project
+                </button>
+            </div>
+
+            <div class="contact-right">
+                <div class="contact-grid">
+                    <div class="contact-card" data-action="call">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <p>Call: +1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-card" data-action="email">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <p>hello@fullplatestudio.com</p>
+                    </div>
+                    <div class="contact-card" data-action="whatsapp">
+                        <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <p>WhatsApp Chat</p>
+                    </div>
+                    <div class="contact-card" data-action="form">
+                        <div class="icon"><i class="fa-solid fa-file-contract"></i></div>
+                        <p>Our Contact Form</p>
+                    </div>
+                    <div class="contact-card" data-action="support">
+                        <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                        <p>24/7 Support</p>
+                    </div>
+                    <div class="contact-card" data-action="location">
+                        <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <p>Get Directions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <h3 id="modalTitle">Get In Touch</h3>
+            <div id="modalContent">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <a href="/">
+                            <img src="./img/logo-03.png" alt="Full Plate Studio Logo" class="logo-img">
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        Transforming brands through innovative digital strategies, stunning designs, and measurable
+                        results.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="about-us.html">About Us <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="services.html">Services <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="blog.html">BLog <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="contact-us.html">Contact <i class="fas fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="offline-marketing.html">Offline Marketing <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                        <li><a href="brand-strategy.html">Brand Strategy & Design <i
+                                    class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="content-marketing.html">Content & Email Marketing <i
+                                    class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="social-media-management.html">Social Media Management <i
+                                    class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="paid-advertising.html">Paid Advertising <i class="fas fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-section newsletter-section">
+                    <h5>Stay Updated</h5>
+                    <p>Subscribe to our newsletter for the latest updates, insights, and digital marketing tips.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                    
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2023 Full Plate Studio. All rights reserved.
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
